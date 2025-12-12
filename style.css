@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #E6E6FA;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#Bagian_utama {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 3px solid #9370DB;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#judul {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: #0000FF;
+}
+
+#Bagian_inputan_data {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#label {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#angka {
+    width: 70%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border: 3px solid #9370DB;
+    text-align: center;
+    background: white;
+    margin-top: 15px;
+}
+
+#angka:focus {
+    outline: none;
+    border-color: #0000FF;
+}
+
+#Bagian_tombol {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#tombol {
+    background: #9370DB;
+    color: black;
+    border: 3px solid black;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#tombol:hover:not(:disabled) {
+    background: #8A2BE2;
+}
+
+#tombol:active {
+    transform: scale(0.95);
+}
+
+#tombol:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#output {
+    background: #F0E6FF;
+    padding: 20px;
+    min-height: 100px;
+    border: 2px solid #9370DB;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#output:empty::before {
+    content: "Hasil akan muncul di sini...";
+    color: #999;
+    font-style: italic;
+}
+
+.btn {
+    background: #9370DB;
+    color: black;
+    border: 3px solid black;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: #8A2BE2;
+}
